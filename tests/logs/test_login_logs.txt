@@ -1,4 +1,0 @@
-2022-12-26 14:45:41 [    INFO] Start enter credentials... (test_login.py: 46)
-2022-12-26 14:45:43 [    INFO] It took: 1.67 seconds (test_login.py: 50)
-2022-12-26 14:45:46 [    INFO] Finished! (test_login.py: 56)
-2022-12-26 14:45:50 [    INFO] Start enter credentials... (test_login.py: 46)

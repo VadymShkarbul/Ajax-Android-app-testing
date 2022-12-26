@@ -1,5 +1,5 @@
-import time
 import subprocess
+import time
 
 import pytest
 from appium import webdriver
@@ -25,4 +25,3 @@ def driver(run_appium_server):
         "http://localhost:4723/wd/hub", android_get_desired_capabilities()
     )
     yield driver
-    driver.quit()

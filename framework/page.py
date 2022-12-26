@@ -27,6 +27,10 @@ class Page:
         field = self.find_element(locator)
         field.send_keys(keys)
 
+    def get_page_title(self, locator: tuple) -> str:
+        element = self.find_element(locator)
+        return element.text
+
     def wait(self, seconds: int) -> None:
         self.driver.implicitly_wait(seconds)
 
