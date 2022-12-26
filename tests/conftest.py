@@ -26,9 +26,3 @@ def driver(run_appium_server):
     )
     yield driver
     driver.quit()
-
-
-@pytest.fixture(scope="session")
-def get_device_uuid():
-    devices = subprocess.run(["adb", "devices"], capture_output=True, text=True)
-    return devices.stdout.split()[4]

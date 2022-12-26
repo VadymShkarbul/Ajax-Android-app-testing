@@ -3,6 +3,8 @@ import time
 import pytest
 import logging
 
+from utils.android_utils import get_device_uuid
+
 LOGGER = logging.getLogger(__name__)
 
 
@@ -54,6 +56,6 @@ def test_user_login(user_login_fixture, login, password, locator, expected):
     LOGGER.info(f"Finished!")
 
 
-def test_getting_uuid(get_device_uuid):
+def test_getting_uuid():
     LOGGER.info("Check device uuid")
-    assert get_device_uuid == "emulator-5554"
+    assert get_device_uuid() == "emulator-5554"
