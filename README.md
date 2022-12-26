@@ -1,3 +1,5 @@
+<img width="1679" alt="Screenshot 2022-12-26 at 12 37 49" src="https://user-images.githubusercontent.com/111114742/209539470-ff63b7bb-9908-4654-a1eb-440255de7f11.png">
+
 ### Ajax Systems, Python developer in test for Application team
 Для выполнения тестового задания Вам нужно установить приложение Ajax Systems на телефон (если у вас нет реального андроид устройства то вы можете использовать эмулятор).
 
