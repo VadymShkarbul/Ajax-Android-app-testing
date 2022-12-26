@@ -12,18 +12,23 @@ LOGGER = logging.getLogger(__name__)
     "login, password, expected",
     [
         pytest.param(
-            "test",
+            "test_login",
             "qa_automation_password",
             False,
             id="Login is incorrect",
         ),
         pytest.param(
             "qa.ajax.app.automation@gmail.com",
-            "test",
+            "test_password",
             False,
             id="Password is incorrect",
         ),
-        pytest.param("test", "test", False, id="All credentials are incorrect"),
+        pytest.param(
+            "test_login",
+            "test_password",
+            False,
+            id="All credentials are incorrect"
+        ),
         pytest.param(
             "qa.ajax.app.automation@gmail.com",
             "qa_automation_password",

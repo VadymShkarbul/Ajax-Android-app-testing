@@ -16,4 +16,3 @@ def user_login_fixture(driver):
 @pytest.fixture(scope="function")
 def menu_fixture(user_login_fixture, driver):
     yield MenuPage(driver)
-    # driver.quit()
