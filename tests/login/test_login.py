@@ -1,9 +1,6 @@
 import time
-
 import pytest
 import logging
-
-from utils.android_utils import get_device_uuid
 
 LOGGER = logging.getLogger(__name__)
 
@@ -39,15 +36,10 @@ LOGGER = logging.getLogger(__name__)
 )
 def test_user_login(user_login_fixture, login, password, expected):
     page = user_login_fixture
-    LOGGER.info("Start enter credentials...")
+    LOGGER.info(f"Start login test with login:{login} password:{password}")
     start = time.perf_counter()
     page.fill_credentials(login, password)
     end = time.perf_counter()
     LOGGER.info(f"It took: {round((end - start), 2)} seconds")
     page.wait(5)
     assert page.check_main_page() == expected
-
-
-def test_getting_uuid():
-    LOGGER.info("Check device uuid")
-    assert get_device_uuid() == "emulator-5554"
