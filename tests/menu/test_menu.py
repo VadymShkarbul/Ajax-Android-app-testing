@@ -1,3 +1,5 @@
+import logging
+
 import pytest
 
 from framework.locators import (
@@ -8,6 +10,8 @@ from framework.locators import (
     ReportPage,
     TermsPage,
 )
+
+LOGGER = logging.getLogger(__name__)
 
 
 def test_menu_open(menu_fixture):

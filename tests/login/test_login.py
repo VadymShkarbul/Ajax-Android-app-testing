@@ -39,7 +39,7 @@ LOGGER = logging.getLogger(__name__)
 )
 def test_user_login(user_login_fixture, login, password, expected):
     page = user_login_fixture
-    LOGGER.info("Start enter credentials...")
+    LOGGER.info(f"Start login test with login:{login} password:{password}")
     start = time.perf_counter()
     page.fill_credentials(login, password)
     end = time.perf_counter()
