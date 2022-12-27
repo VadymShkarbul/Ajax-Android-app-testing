@@ -1,1 +1,0 @@
-2022-12-26 16:56:25 [    INFO] Check device uuid (test_login.py: 51)

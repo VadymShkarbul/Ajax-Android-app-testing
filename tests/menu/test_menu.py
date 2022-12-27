@@ -93,5 +93,7 @@ def test_menu_buttons_click(menu_fixture, button, locator, title):
     if not page.check_element(MenuLocators.MENU):
         page.menu_open()
     page.click_element(button)
+    LOGGER.info(f"Redirect to page with id: {locator[1]}")
     assert page.get_page_title(locator) == title
+    LOGGER.info(f"Got page id: {title}")
     page.go_back()
